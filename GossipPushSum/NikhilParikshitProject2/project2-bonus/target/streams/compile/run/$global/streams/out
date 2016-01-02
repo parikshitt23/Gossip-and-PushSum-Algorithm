@@ -1,0 +1,50 @@
+[0m[[0minfo[0m] [0mRunning project2Bonus 512 full gossip 100[0m
+[0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
+[0m[[0mdebug[0m] [0m  Classpath:[0m
+[0m[[0mdebug[0m] [0m	C:\Users\parikshitt23\Desktop\project2-bonus\project2-bonus\target\scala-2.11\classes[0m
+[0m[[0mdebug[0m] [0m	C:\Users\parikshitt23\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.7.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\parikshitt23\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\parikshitt23\.ivy2\cache\com.typesafe\config\bundles\config-1.2.1.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\parikshitt23\.ivy2\cache\com.typesafe.akka\akka-remote_2.11\jars\akka-remote_2.11-2.3.13.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\parikshitt23\Downloads\typesafe-activator-1.3.6\activator-dist-1.3.6\repository\io.netty\netty\3.8.0.Final\bundles\netty.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\parikshitt23\.ivy2\cache\com.google.protobuf\protobuf-java\bundles\protobuf-java-2.5.0.jar[0m
+[0m[[0mdebug[0m] [0m	C:\Users\parikshitt23\Downloads\typesafe-activator-1.3.6\activator-dist-1.3.6\repository\org.uncommons.maths\uncommons-maths\1.2.2a\jars\uncommons-maths.jar[0m
+[0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
+[0m[[31merror[0m] [0m(run-main-0) java.lang.OutOfMemoryError: Java heap space[0m
+java.lang.OutOfMemoryError: Java heap space
+	at java.lang.reflect.Array.newInstance(Array.java:70)
+	at scala.reflect.ClassTag$class.newArray(ClassTag.scala:61)
+	at scala.reflect.ClassTag$$anon$1.newArray(ClassTag.scala:152)
+	at scala.Array$.ofDim(Array.scala:222)
+	at scala.Array$$anonfun$ofDim$2.apply(Array.scala:228)
+	at scala.Array$$anonfun$ofDim$2.apply(Array.scala:228)
+	at scala.Array$.tabulate(Array.scala:331)
+	at scala.Array$.ofDim(Array.scala:228)
+	at project2Bonus$.delayedEndpoint$project2Bonus$1(project2Bonus.scala:297)
+	at project2Bonus$delayedInit$body.apply(project2Bonus.scala:274)
+	at scala.Function0$class.apply$mcV$sp(Function0.scala:34)
+	at scala.runtime.AbstractFunction0.apply$mcV$sp(AbstractFunction0.scala:12)
+	at scala.App$$anonfun$main$1.apply(App.scala:76)
+	at scala.App$$anonfun$main$1.apply(App.scala:76)
+	at scala.collection.immutable.List.foreach(List.scala:381)
+	at scala.collection.generic.TraversableForwarder$class.foreach(TraversableForwarder.scala:35)
+	at scala.App$class.main(App.scala:76)
+	at project2Bonus$.main(project2Bonus.scala:274)
+	at project2Bonus.main(project2Bonus.scala)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:606)
+	at sbt.Run.invokeMain(Run.scala:67)
+	at sbt.Run.run0(Run.scala:61)
+	at sbt.Run.sbt$Run$$execute$1(Run.scala:51)
+	at sbt.Run$$anonfun$run$1.apply$mcV$sp(Run.scala:55)
+	at sbt.Run$$anonfun$run$1.apply(Run.scala:55)
+	at sbt.Run$$anonfun$run$1.apply(Run.scala:55)
+	at sbt.Logger$$anon$4.apply(Logger.scala:85)
+	at sbt.TrapExit$App.run(TrapExit.scala:248)
+	at java.lang.Thread.run(Thread.java:745)
+[0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread NodesSystem-akka.actor.default-dispatcher-3 to terminate.[0m
+[0m[[0mdebug[0m] [0m	Thread NodesSystem-akka.actor.default-dispatcher-3 exited.[0m
+[0m[[0mdebug[0m] [0mWaiting for thread NodesSystem-akka.actor.default-dispatcher-4 to terminate.[0m
